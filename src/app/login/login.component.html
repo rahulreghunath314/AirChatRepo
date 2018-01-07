@@ -1,0 +1,26 @@
+
+ 
+<form>
+  <div><h1>Airchat Login</h1></div>
+
+  <mat-form-field >
+<input matInput [(ngModel)]="userNameValue" placeholder="UserName"  name="userName" >
+  </mat-form-field>
+   <mat-form-field  >
+     <input type="Password" [(ngModel)]="PassWord" name="PassWord"  matInput placeholder="Password" >
+   </mat-form-field>
+
+ <button type="button" class="button buttonBlue" (click)="LoginEvent($event)">Login
+   <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+ </button>
+ <div class="input-field col s6 m6 l6">
+   <p class="margin medium-small"><a href="register">Register Now!</a></p>
+ </div>
+ <div class="input-field col s6 m6 l6">
+   <p class="margin right-align medium-small"><a href="Forgotpassword">Forgot password ?</a></p>
+</div>
+
+</form>
+<footer><a href="http://www.polymer-project.org/" target="_blank"><img src="https://www.polymer-project.org/images/logos/p-logo.svg"></a>
+ <p>Your  <a href="http://www.polymer-project.org/" target="_blank">Airchat</a></p>
+</footer>
